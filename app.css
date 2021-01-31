@@ -1,0 +1,109 @@
+:root{
+    font-size: 18px;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: hsl(185, 75%, 39%);
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.main{
+    background-color: white;
+    border-radius: 5%;
+    overflow: hidden;
+    width:320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+.CardBody{
+    position: relative;
+    top: -60px;
+    height: 159px;
+
+}
+
+.cardImg{
+    border: 5px solid white; 
+    border-radius: 50px;
+    margin-bottom: 18px;
+}
+
+.name{
+    font-weight: 700;
+    color:hsl(229, 23%, 23%);
+    margin-bottom: 13px;
+    
+}
+.age{
+    font-weight: 400;
+    color: hsl(0, 0%, 59%);
+}
+.city{
+    font-weight: 400;
+    color: hsl(0, 0%, 59%);
+    margin-bottom: 40px;
+    font-size: 15px;
+}
+
+hr.divider{
+    width:350px;
+    border-top: 0.8px solid #ddd6d6;
+}
+
+.CardFooter{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.stats{
+    padding: 7%;
+    margin:10px;
+}
+
+.numbers{
+    color: hsl(229, 23%, 23%);
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+.statslabel{
+    color: hsl(0, 0%, 59%);
+    font-size: 12px;
+}
+
+.circle{
+    position:absolute;
+
+}
+.circle1{
+    transform: translate(-50%, -40%);
+}
+.circle2{
+    bottom:0;
+    right:0;
+    transform: translate(30%, 60%);
+}
+
+@media screen and (max-width: 706px){
+    .circle1{
+        transform: translate(-35%, -55%);
+    }
+    .circle2{
+        bottom:0;
+        right:0;
+        transform: translate(70%, 65%);
+    }
+}
